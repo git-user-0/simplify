@@ -3,6 +3,7 @@ numerator = int(input('What is the numerator? '))
 denominator = int(input('\nWhat is the denominator? '))
 
 # work out the common divisors for the numerator and denominator
+# this is where I use list comprehension
 common_divisors = [x for x in range(1, numerator+1) if numerator%x==0 and denominator%x==0]
 
 # find the greatest common divisor
